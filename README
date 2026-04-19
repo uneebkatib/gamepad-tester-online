@@ -1,0 +1,56 @@
+# Gamepad Tester Online (HTML5 Gamepad API)
+
+A lightweight open-source JavaScript gamepad tester using the HTML5 Gamepad API.
+Test Xbox, PlayStation, and generic controllers directly in your browser.
+
+## Features
+
+* Detect connected gamepads
+* Button press detection
+* Analog stick visualization
+* Trigger pressure values
+* Vibration support detection
+* Works in Chrome, Edge, Firefox
+
+## Live Demo
+
+Use the full featured version here:
+👉 https://mygamepadtester.com
+
+## Basic Usage
+
+```html
+<script src="gamepad.js"></script>
+```
+
+```js
+window.addEventListener("gamepadconnected", (e) => {
+  console.log("Gamepad connected:", e.gamepad);
+});
+```
+
+## Supported Controllers
+
+* Xbox Series X/S controller
+* PS5 DualSense
+* PS4 DualShock
+* Nintendo Switch Pro
+* Generic USB gamepads
+
+## Why this project exists
+
+This is a simplified open-source version of the full testing suite available at:
+https://mygamepadtester.com
+
+The full version includes:
+
+* Deadzone tester
+* Input lag tester
+* Stick drift test
+* Trigger test
+* Vibration test
+* Multi-controller support
+
+## License
+
+MIT
